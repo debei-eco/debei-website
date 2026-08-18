@@ -1,0 +1,31 @@
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+toggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', String(open));
+  toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+
+nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+  nav.classList.remove('open');
+  toggle.setAttribute('aria-expanded', 'false');
+}));
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+document.querySelector('#enquiry-form').addEventListener('submit', (event) => {
+  event.preventDefault();
+  const note = event.currentTarget.querySelector('.form-note');
+  note.textContent = 'Thank you — your enquiry is ready. Our team will be in touch shortly.';
+  event.currentTarget.reset();
+});
