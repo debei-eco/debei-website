@@ -6,3 +6,11 @@
 .product-grid > .product-card:nth-child(-n + 5) {
   display: none;
 }
+/* Hide the five original CSS illustration cards */
+.product-card:has(.art-plates),
+.product-card:has(.art-box),
+.product-card:has(.art-cups),
+.product-card:has(.art-tray),
+.product-card:has(.art-cutlery) {
+  display: none !important;
+}
