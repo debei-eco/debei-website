@@ -4,7 +4,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.button{transition:none}}
 /* Hide the original illustration placeholder cards */
 .product-grid > .product-card:nth-child(n + 8) {
-  display: none;
+  display: block;
 }
 /* Hide the five original CSS illustration cards */
 .product-card:has(.art-plates),
