@@ -42,11 +42,39 @@
         <div class="hero-visual reveal delay-1" aria-label="Compostable DEBEI plate and cutlery arranged on a natural green setting">
           <div class="botanical leaf-a"></div><div class="botanical leaf-b"></div>
           <div class="hero-badge"><strong>100%</strong><span>plant<br />based</span></div>
-          <img
-  src="./meal-box-01.png"
-  alt="DEBEI sugarcane bagasse and cornstarch food containers"
-  style="width:75%;max-width:560px;height:auto;object-fit:contain;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;"
+         <img
+  id="hero-product-image"
+  src="./bagasse-plates-and-bowls.png"
+  alt="DEBEI eco-friendly food packaging"
+  style="width:75%;max-width:560px;max-height:75%;height:auto;object-fit:contain;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;border-radius:16px;transition:opacity 0.4s ease;"
 />
+
+<script>
+  (function () {
+    const images = [
+      "./bagasse-plates-and-bowls.png",
+      "./paper-pulp-tea-cups.png",
+      "./bagasse-square-plates.png",
+      "./cornstarch-compartment-boxes.png",
+      "./disposable-round-plates.png",
+      "./bagasse-burger-boxes.png",
+      "./eco-friendly-disposable-tableware-set.png"
+    ];
+
+    const image = document.getElementById("hero-product-image");
+    let currentIndex = 0;
+
+    setInterval(function () {
+      image.style.opacity = "0";
+
+      setTimeout(function () {
+        currentIndex = (currentIndex + 1) % images.length;
+        image.src = images[currentIndex];
+        image.style.opacity = "1";
+      }, 400);
+    }, 3000);
+  })();
+</script>
           <div class="fork"><i></i><i></i><i></i><i></i><b></b></div>
           <div class="seed seed-a"></div><div class="seed seed-b"></div><div class="seed seed-c"></div>
           <div class="stat-card"><span class="stat-icon">♻</span><span><strong>Compostable</strong><small>Back to nature in 90 days*</small></span></div>
