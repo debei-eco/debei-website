@@ -23,9 +23,4 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
-document.querySelector('#enquiry-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const note = event.currentTarget.querySelector('.form-note');
-  note.textContent = 'Thank you — your enquiry is ready. Our team will be in touch shortly.';
-  event.currentTarget.reset();
-});
+
