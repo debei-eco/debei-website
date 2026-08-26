@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.debeieco.com/</loc>
-  </url>
-  <url>
-    <loc>https://www.debeieco.com/coffee-cup.html</loc>
-  </url>
-  <url>
-    <loc>https://www.debeieco.com/square-plates.html</loc>
-  </url>
+  <url><loc>https://www.debeieco.com/</loc><lastmod>2026-08-25</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.debeieco.com/coffee-cup.html</loc><lastmod>2026-08-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.debeieco.com/meal-box.html</loc><lastmod>2026-08-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.debeieco.com/round-plates.html</loc><lastmod>2026-08-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.debeieco.com/square-plates.html</loc><lastmod>2026-08-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.debeieco.com/tea-set.html</loc><lastmod>2026-08-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.debeieco.com/bowls-and-trays.html</loc><lastmod>2026-08-25</lastmod><priority>0.8</priority></url>
 </urlset>
